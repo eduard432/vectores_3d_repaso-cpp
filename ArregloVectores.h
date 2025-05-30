@@ -3,9 +3,11 @@
 #ifndef ARREGLO_VECTORES
 #define ARREGLO_VECTORES
 
+#define MAX_ELEME 6
+
 class ArregloVectores {
     private:
-        Vector3D vectores[6];
+        Vector3D vectores[MAX_ELEME];
         int indice = 0;
     public:
         Vector3D getVector(int indice);
