@@ -7,7 +7,7 @@ Vector3D ArregloVectores::getVector(int indice) {
 
 void ArregloVectores::agregar(Vector3D vec) {
     vectores[indice] = vec;
-    if(indice <= MAX_ELEME - 1) {
+    if(indice < MAX_ELEME) {
         indice++;
     } else {
         std::cout << "El vector ya tiene 6 elementos." << "\n";
@@ -24,7 +24,7 @@ Vector3D ArregloVectores::suma() {
 }
 
 void ArregloVectores::imprimir() {
-    for(int i = 0; i <= indice - 1; i++) {
+    for(int i = 0; i < indice; i++) {
         Vector3D vector = vectores[i];
         vector.imprimir();
     }
